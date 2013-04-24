@@ -533,6 +533,11 @@ class FacebookHelper extends AppHelper {
 		
 		// Other javascript code goes here!
 
+		//@mrhieu
+		FB.Event.subscribe('auth.login', function(response) {
+      window.location = window.location;
+    });
+
 	};
 
 	// logs the user in the application and facebook
